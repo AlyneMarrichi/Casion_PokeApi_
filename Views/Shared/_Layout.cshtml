@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Casion_PokeApi</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />    
+    <link rel="stylesheet" href="~/css/Poke.css" />
+</head>
+<body style="background: #000002; color: #ffffff;">    
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #DC0A2D;">
+            <div class="container">
+                <div class="nav-poke">
+                    <div class="frame-elipse"> </div>
+                    <p>Casion Pokedex</p>
+                    <div class="frame">
+                        <div class="group"></div>
+                        <p>Ash</p>
+                    </div>
+                </div>
+                <div class="navbar-header">                    
+                    @*@Html.ActionLink("Casion Pokedex", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                </div>
+                <div class="navbar-collapse collapse">
+                    @*<ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Início", "Index", "Pokemons")</li>
+                    </ul>*@
+                </div>
+                <div class="fade-nav"> </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <dl class="row">
+                    <dd class="col-sm-3">&copy; @DateTime.Now.Year - Casion</dd>
+                    <dd class="text-right col-sm-9">#TechGoodies</dd>
+                </dl>
+            </footer>
+        </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

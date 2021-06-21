@@ -1,0 +1,354 @@
+.nav-poke {
+    color: #ffffff;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.frame {
+    /* Frame 20 */
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 89px;
+    height: 24px;
+    right: 32px;
+    top: 20px;
+}
+
+.frame-elipse {
+    /* Frame 2 */
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 32px;
+    top: 16px;
+    /* Content */
+    border: 3px solid #FFFFFF;
+    border-radius: 96px;
+    /* Ellipse 4 */
+    position: absolute;
+    left: 22.5%;
+    right: 50%;
+    top: 20%;
+    bottom: 52.5%;
+    background: #96DEFF;
+    /* Subtract */
+    position: absolute;
+    width: 27.2px;
+    height: 27.2px;
+    left: 4.8px;
+    top: 4.8px;
+    background: #19699E;
+    opacity: 0.5;
+    /* Ellipse 4 */
+    position: absolute;
+    left: 17.66%;
+    right: 39.84%;
+    top: 15%;
+    bottom: 42.5%;
+    background: #29A7F7;
+    /* Ellipse 2 */
+    position: absolute;
+    left: 5%;
+    right: 0%;
+    top: 15%;
+    bottom: 0%;
+    background: #19699E;
+}
+
+.chevron {
+    /* chevron-down */
+    position: static;
+    width: 16px;
+    height: 16px;
+    left: 73px;
+    top: 4px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 10px;
+    /* Vector (Stroke) */
+    position: absolute;
+    left: 20.83%;
+    right: 20.83%;
+    top: 33.33%;
+    bottom: 33.33%;
+    /* Content */
+    background: #FFFFFF;
+}
+
+.group {
+    /* Group 1 */
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    position: absolute;
+    width: 12px;
+    height: 14.25px;
+    left: -30px;
+    top: 0.12px;
+    background: url('../images/image 4.png');
+    /* Ellipse 1 
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 0px;
+            top: 0px;
+            background: #375FDA;*/
+}
+
+.grid-poke {
+    /* Grid */
+    /* Auto Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 1376px;
+    height: 1453px;
+    left: 32px;
+    top: 124px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+.line-poke {
+    /* Line */
+    /* Auto Layout */
+    display: contents;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 1376px;
+    height: 265px;
+    left: 0px;
+    top: 1188px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 32px 0px;
+}
+
+.card-poke {
+    position: static;
+    width: 262px;
+     /*       height: 190px;
+            left: 0px;
+            top: 0px;*/
+    /* BackgroundSecondary */
+    background: #222222;
+    border-radius: 6px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 8px 0px;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.type {
+    /* Type */
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 111px;
+    height: 16px;
+    left: 8%;
+    top: 84%;
+}
+
+.badge {
+    /* Badge */
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1px 4px;
+    position: static;
+    width: 51px;
+    height: 16px;
+    left: 0px;
+    top: 0px;
+    /* Type/Flying */
+    background: #849ED8;
+    box-shadow: inset 1px 0px 0px #FFFFFF;
+    border-radius: 2px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.badge-poke {    
+    background: #ABB6BF;   
+}
+
+.text-Badge {
+    /* Voador */
+    position: static;
+    width: 44px;
+    height: 14px;
+    left: 4px;
+    top: 1px;
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    /* Content */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.text-Id {
+    /* #016 
+            position: absolute;
+            height: 20px;
+            left: 16px;
+            right: 16px;
+            top: 14px;*/
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    /* Gray */
+    color: #BFBFBF;
+    margin-left: -66%;
+}
+
+.text-Name {
+    /* Pidgey 
+            position: absolute;
+            height: 37px;
+            left: 16px;
+            right: 16px;
+            top: 38px;*/
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    /* identical to box height */
+    /* Content */
+    color: #FFFFFF;
+    margin-left: -66%;
+}
+
+.img-poke {
+    /* image 9 
+            position: absolute;
+            width: 104px;
+            height: 157px;
+            right: 16px;
+            top: 66px;*/ 
+    padding-left: 18%;
+    padding-bottom: 14%;
+}
+
+.fade {
+    /* Fade */
+    position: absolute;
+    height: 258.82px;
+    left: -9.92%;
+    right: 11.09%;
+    top: 231.73px;
+    opacity: 0.7;
+    transform: matrix(0.71, -0.6, 0.84, 0.71, 0, 0);
+    /*}
+        .fadeRetangulo {
+             Rectangle 3 */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 80.26%;
+    bottom: -80.26%;
+    /* Type/Flying */
+    background: #849ED8;
+    transform: matrix(0.71, -0.6, 0.84, 0.71, 0, 0);
+    /*}
+        .fadeRet {
+             Rectangle 2 */
+    position: absolute;
+    left: 0%;
+    right: -22%;
+    top: 34.26%;
+    bottom: -80.26%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    transform: matrix(0.71, -0.6, 0.84, 0.71, 0, 0);
+}
+
+.fade-img {
+    background-image: url('../images/Fade.png');
+    padding-left: 40%;
+    padding-bottom: 10%;
+}
+
+.card-img-top {
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-pane {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 80.26%;
+    bottom: -80.26%; 
+    /* Type/Flying */
+    background: #849ED8;
+    transform: matrix(0.71, -0.6, 0.84, 0.71, 0, 0);
+    text-align: center;
+    background-image: linear-gradient(to botton, transfparente, white)
+}
+
+.hr-poke{
+    background-color: white;
+}
+
+.card-body-poke{
+    padding: 0px;
+}
+
+.fade-nav{
+    /* Fade */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 39%;
+bottom: -10%;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 83.62%);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}

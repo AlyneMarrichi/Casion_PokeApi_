@@ -1,0 +1,40 @@
+﻿@model List<Casion_PokeApi.Models.Pokemons>
+
+<h2>@ViewBag.Title</h2>
+
+<p class="text-right">@ViewBag.Contador</p>
+<hr class="hr-poke"/>
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="tab-content line-poke ">
+            <div class="col-sm-3">
+                <div class="card card-poke">
+                    <div class="card-body card-body-poke">
+                        <div class="fade-img">
+                            <p class="card-text text-Id">@item.Id</p>
+                            <p class="card-text text-Name ">@item.Name</p>
+
+                            <div class="img-poke">
+                                <img src="@item.Sprites.Front_default" alt="@item.Name">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <p class="card-text badge">@item.Types[0].Type.Name</p>
+                            @if (item.Types.Count == 2)
+                            {
+                                <p class="card-text badge badge-poke">@item.Types[1].Type.Name</p>
+                            }                            
+                        </div>
+                        @*<div class="fade">
+                            <span class="fade-retangulo"> </span>
+                            <span class="fade-ret"> </span>
+                        </div>*@
+                        </div>
+                </div>
+            </div>
+        </div>            
+    }
+</div>
